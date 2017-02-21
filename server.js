@@ -16,6 +16,10 @@ var server = http.createServer(function (request, response) {
   var message = "<h1>Jacob's Web Server</h1></br>";
   if (request.url === '/') {
     message += "<p>Welcome to the server</p>";
+    message += "<ul>";
+    message += "<li><a href='/random-joke'>Random Joke</a></li>";
+    message += "<li><a href='/cuteness'>Cuteness</a></li>";
+    message += "<li><a href='/bad-page'>Bad Page</a></li>";
   } else if (request.url === '/random-joke') {
     var joke = getJoke();
     message += "<p>" + joke + "</p>";
