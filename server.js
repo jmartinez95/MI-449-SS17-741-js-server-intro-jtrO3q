@@ -25,4 +25,4 @@ var port = 8080
 server.listen(port)
 
 // Output a friendly message to the terminal
-console.log('Server running at http://localhost:' + port + '/')
+console.log('Server running at' + http + port + '/')
