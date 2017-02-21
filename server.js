@@ -1,5 +1,12 @@
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function getJoke() {
-  jokeToTell = Math.random();
+  jokeToTell = getRandomIntInclusive(1, 3);
+  console.log(jokeToTell);
   if(jokeToTell == 1) {
     return "Knock knock.</br></br>Who's there?</br></br>Beats.</br></br>Beats who?</br></br>Beats me.";
   } else if(jokeToTell == 2) {
