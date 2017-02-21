@@ -6,7 +6,6 @@ var http = require('http')
 
 // Create a new server that just says "Hi!!" at every route
 var server = http.createServer(function (request, response) {
-  response.end('<h1>Jacob Web Server</h1>')
   if (request.url === '/') {
     response.end('Greeting');
   } else if (request.url === '/random-joke') {
