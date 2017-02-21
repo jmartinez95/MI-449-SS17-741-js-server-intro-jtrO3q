@@ -5,7 +5,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 function getJoke() {
-  jokeToTell = getRandomIntInclusive(1, 3);
+  var jokeToTell = getRandomIntInclusive(1, 3);
   console.log(jokeToTell);
   if(jokeToTell == 1) {
     return "Knock knock.</br></br>Who's there?</br></br>Beats.</br></br>Beats who?</br></br>Beats me.";
@@ -16,7 +16,7 @@ function getJoke() {
   }
 }
 // Require Node's http module and assign it to a variable
-var http = require('http')
+var http = require('http');
 
 // Create a new server that just says "Hi!!" at every route
 var server = http.createServer(function (request, response) {
@@ -40,8 +40,8 @@ var server = http.createServer(function (request, response) {
 
 // Listen on port 8080, so that we can reach the app at
 // localhost:8080
-var port = process.env.PORT || 8080
-server.listen(port)
+var port = process.env.PORT || 8080;
+server.listen(port);
 
 // Output a friendly message to the terminal
-console.log('Server running at' + http + port + '/')
+console.log('Server running at' + http + port + '/');
